@@ -33,6 +33,7 @@ from ..blenderbot_small.configuration_blenderbot_small import (
     BlenderbotSmallConfig,
 )
 from ..camembert.configuration_camembert import CAMEMBERT_PRETRAINED_CONFIG_ARCHIVE_MAP, CamembertConfig
+from ..character_bert.configuration_character_bert import CHARACTER_BERT_PRETRAINED_CONFIG_ARCHIVE_MAP, CharacterBertConfig
 from ..clip.configuration_clip import CLIP_PRETRAINED_CONFIG_ARCHIVE_MAP, CLIPConfig
 from ..convbert.configuration_convbert import CONVBERT_PRETRAINED_CONFIG_ARCHIVE_MAP, ConvBertConfig
 from ..ctrl.configuration_ctrl import CTRL_PRETRAINED_CONFIG_ARCHIVE_MAP, CTRLConfig
@@ -123,6 +124,7 @@ ALL_PRETRAINED_CONFIG_ARCHIVE_MAP = dict(
         DISTILBERT_PRETRAINED_CONFIG_ARCHIVE_MAP,
         ALBERT_PRETRAINED_CONFIG_ARCHIVE_MAP,
         CAMEMBERT_PRETRAINED_CONFIG_ARCHIVE_MAP,
+        CHARACTER_BERT_PRETRAINED_CONFIG_ARCHIVE_MAP,
         T5_PRETRAINED_CONFIG_ARCHIVE_MAP,
         XLM_ROBERTA_PRETRAINED_CONFIG_ARCHIVE_MAP,
         FLAUBERT_PRETRAINED_CONFIG_ARCHIVE_MAP,
@@ -174,6 +176,7 @@ CONFIG_MAPPING = OrderedDict(
         ("albert", AlbertConfig),
         ("bert-generation", BertGenerationConfig),
         ("camembert", CamembertConfig),
+        ("character_bert", CharacterBertConfig),
         ("xlm-roberta", XLMRobertaConfig),
         ("pegasus", PegasusConfig),
         ("marian", MarianConfig),
@@ -236,6 +239,7 @@ MODEL_NAMES_MAPPING = OrderedDict(
         ("albert", "ALBERT"),
         ("bert-generation", "Bert Generation"),
         ("camembert", "CamemBERT"),
+        ("character_bert", "CharacterBERT"),
         ("xlm-roberta", "XLM-RoBERTa"),
         ("pegasus", "Pegasus"),
         ("blenderbot", "Blenderbot"),

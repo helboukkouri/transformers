@@ -33,7 +33,10 @@ from ..blenderbot_small.configuration_blenderbot_small import (
     BlenderbotSmallConfig,
 )
 from ..camembert.configuration_camembert import CAMEMBERT_PRETRAINED_CONFIG_ARCHIVE_MAP, CamembertConfig
-from ..character_bert.configuration_character_bert import CHARACTER_BERT_PRETRAINED_CONFIG_ARCHIVE_MAP, CharacterBertConfig
+from ..character_bert.configuration_character_bert import (
+    CHARACTER_BERT_PRETRAINED_CONFIG_ARCHIVE_MAP,
+    CharacterBertConfig,
+)
 from ..clip.configuration_clip import CLIP_PRETRAINED_CONFIG_ARCHIVE_MAP, CLIPConfig
 from ..convbert.configuration_convbert import CONVBERT_PRETRAINED_CONFIG_ARCHIVE_MAP, ConvBertConfig
 from ..ctrl.configuration_ctrl import CTRL_PRETRAINED_CONFIG_ARCHIVE_MAP, CTRLConfig

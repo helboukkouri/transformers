@@ -17,7 +17,6 @@
 # limitations under the License.
 
 from . import (
-    character_bert,
     albert,
     auto,
     bart,
@@ -31,6 +30,7 @@ from . import (
     blenderbot,
     blenderbot_small,
     camembert,
+    character_bert,
     clip,
     convbert,
     cpm,

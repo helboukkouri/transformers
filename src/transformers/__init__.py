@@ -1641,7 +1641,6 @@ if TYPE_CHECKING:
         load_tf2_weights_in_pytorch_model,
     )
     from .models.albert import ALBERT_PRETRAINED_CONFIG_ARCHIVE_MAP, AlbertConfig
-    from .models.character_bert import CHARACTER_BERT_PRETRAINED_CONFIG_ARCHIVE_MAP, CharacterBertConfig, CharacterBertTokenizer
     from .models.auto import (
         ALL_PRETRAINED_CONFIG_ARCHIVE_MAP,
         CONFIG_MAPPING,
@@ -1673,6 +1672,11 @@ if TYPE_CHECKING:
     )
     from .models.byt5 import ByT5Tokenizer
     from .models.camembert import CAMEMBERT_PRETRAINED_CONFIG_ARCHIVE_MAP, CamembertConfig
+    from .models.character_bert import (
+        CHARACTER_BERT_PRETRAINED_CONFIG_ARCHIVE_MAP,
+        CharacterBertConfig,
+        CharacterBertTokenizer,
+    )
     from .models.clip import (
         CLIP_PRETRAINED_CONFIG_ARCHIVE_MAP,
         CLIPConfig,
@@ -1890,23 +1894,6 @@ if TYPE_CHECKING:
     # Modeling
     if is_torch_available():
 
-        from .models.character_bert import (
-            CHARACTER_BERT_PRETRAINED_MODEL_ARCHIVE_LIST,
-            CharacterCnn,
-            CharacterBertForMaskedLM,
-            CharacterBertForMultipleChoice,
-            CharacterBertForNextSentencePrediction,
-            CharacterBertForPreTraining,
-            CharacterBertForQuestionAnswering,
-            CharacterBertForSequenceClassification,
-            CharacterBertForTokenClassification,
-            CharacterBertLayer,
-            CharacterBertLMHeadModel,
-            CharacterBertModel,
-            CharacterBertPreTrainedModel,
-            load_tf_weights_in_character_bert,
-        )
-
         # Benchmarks
         from .benchmark.benchmark import PyTorchBenchmark
         from .benchmark.benchmark_args import PyTorchBenchmarkArguments
@@ -2071,6 +2058,22 @@ if TYPE_CHECKING:
             CamembertForSequenceClassification,
             CamembertForTokenClassification,
             CamembertModel,
+        )
+        from .models.character_bert import (
+            CHARACTER_BERT_PRETRAINED_MODEL_ARCHIVE_LIST,
+            CharacterBertForMaskedLM,
+            CharacterBertForMultipleChoice,
+            CharacterBertForNextSentencePrediction,
+            CharacterBertForPreTraining,
+            CharacterBertForQuestionAnswering,
+            CharacterBertForSequenceClassification,
+            CharacterBertForTokenClassification,
+            CharacterBertLayer,
+            CharacterBertLMHeadModel,
+            CharacterBertModel,
+            CharacterBertPreTrainedModel,
+            CharacterCnn,
+            load_tf_weights_in_character_bert,
         )
         from .models.clip import (
             CLIP_PRETRAINED_MODEL_ARCHIVE_LIST,

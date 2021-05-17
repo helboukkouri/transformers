@@ -83,9 +83,9 @@ from ..camembert.modeling_camembert import (
 )
 from ..character_bert.modeling_character_bert import (
     CharacterBertForMaskedLM,
+    CharacterBertForMultipleChoice,
     CharacterBertForNextSentencePrediction,
     CharacterBertForPreTraining,
-    CharacterBertForMultipleChoice,
     CharacterBertForQuestionAnswering,
     CharacterBertForSequenceClassification,
     CharacterBertForTokenClassification,

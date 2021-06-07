@@ -14,6 +14,7 @@ MODEL_FOR_QUESTION_ANSWERING_MAPPING_NAMES = OrderedDict(
         ("DistilBertConfig", "DistilBertForQuestionAnswering"),
         ("AlbertConfig", "AlbertForQuestionAnswering"),
         ("CamembertConfig", "CamembertForQuestionAnswering"),
+        ("CharacterBertConfig", "CharacterBertForQuestionAnswering"),
         ("BartConfig", "BartForQuestionAnswering"),
         ("MBartConfig", "MBartForQuestionAnswering"),
         ("LongformerConfig", "LongformerForQuestionAnswering"),
